@@ -1,0 +1,19 @@
+<launch>
+
+    <group ns="barge">
+
+        <remap from="pose_real" to="pose_est"/>
+
+        <node pkg="bubble_man_inputs" name="key_listener" type="key_listener.py"/>
+        <node pkg="bubble_man_inputs" name="key_interpreter" type="key_interpreter.py"/>
+
+        <node pkg="bubble_reg" name="path" type="path"/>
+        <node pkg="bubble_reg" name="cmd_interpreter_Barge" type="cmd_interpreter_Barge.py"/>
+        <node pkg="bubble_reg" name="regulation" type="regulation" output="screen"/>
+        <node pkg="bubble_simu" name="sim_world" type="sim_world.py"/>
+
+        <node pkg="bubble_disp" name="display_python" type="display_python.py"/>
+
+    </group>
+
+</launch>
