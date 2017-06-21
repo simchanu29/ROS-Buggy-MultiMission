@@ -1,0 +1,6 @@
+[submodule "src/ros_bprime_drivers"]
+	path = src/ros_bprime_drivers
+	url = https://github.com/simchanu29/ros_bprime_drivers.git
+[submodule "src/ros_teleop"]
+	path = src/ros_teleop
+	url = https://github.com/simchanu29/ros_teleop.git
