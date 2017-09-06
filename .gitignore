@@ -1,5 +1,15 @@
+# Jetbrains
 .idea
+
+# Roboware studio
+.vscode
+
+# ROS
 .catkin_workspace
 build
 devel
+devel_isolated
+el
+el_isolated
 src/CMakeLists.txt
+
